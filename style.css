@@ -1,0 +1,287 @@
+body{
+    background: rgb(116, 112, 112);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+header{
+    background: rgb(12, 12, 11);
+    background-image: none;
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    }
+     
+    li{
+    float:left
+    }
+     
+     
+    a:link, a:visited{
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#3921bf;
+    width:120px;
+    text-align:center;
+    padding:4px;
+    margin: 5px;
+    margin-right: 3px;
+    text-transform:uppercase;
+    text-decoration:none;
+    }
+     
+    a:hover, a:active{
+    background-color:skyblue;
+    }
+
+
+    .loginbox{
+        width: 320px;
+        height: 650px;
+        background: #000;
+        color: #fff;
+        top: 70%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+    }
+    @media (max-width: 768px){
+        .loginbox{
+        width: 270px;
+        height: 650px;
+        top: 90%;
+        }
+    }
+
+
+    .avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 50px);
+    }
+    
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .loginbox p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+    
+    .loginbox input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .loginbox input[type="text"], input[type="password"],input[type="email"]
+    {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .loginbox input[type="submit"]
+    {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #3921bf;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    .loginbox input[type="submit"]:hover
+    {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+    }
+
+    .mySlides{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .content img{
+        height: 500px;
+    }
+    @media (max-width: 768px){
+        .content{
+        width: 100%;
+        }
+        .content img{
+            height: 250px;
+        }
+    }
+    .loginbox1{
+        width: 500px;
+        height: 600px;
+        background: #000;
+        color: #fff;
+        top: 35%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%,0%);
+        box-sizing: border-box;
+        padding: 30px 30px;
+    }
+    @media (max-width: 768px){
+        .loginbox1{
+        width: 270px;
+        height: 650px;
+        top: 30%;
+        }
+    }
+    .loginbox1 input[type="text"], input[type="password"]
+    {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .loginbox1 input[type="submit"]
+    {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #3921bf;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+    }
+    .loginbox1 input[type="submit"]:hover
+    {
+        cursor: pointer;
+        background: #ffc107;
+        color: #000;
+    }
+    /*.row{
+        border: 3px solid white ;
+    }*/
+    .clm {
+        float: left;
+        width: 15%;
+        padding: 50px;
+      }
+      .clm img{
+          border-radius: 50%;
+          height: 100px;
+          cursor: pointer;
+      }
+      @media (max-width: 768px){
+        .clm{
+            float: center;
+        width: 50%;
+        }
+    }
+
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        align-items: center;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ccc;
+      }
+      
+      .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .panel {
+        padding: 0 18px;
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+      .contact .contact-info-item{
+        float: left;
+        width: 25%;
+        padding: 5px;
+        text-align: center;
+    }
+    .contact .contact-info-item .icon{
+        display: inline-block;
+        color: #fad503;
+       
+    }
+    .contact .contact-info-item .icon .fa{
+        font-size: 40px;
+    }
+    .contact .contact-info-item h4{
+        font-size: 18px;
+        font-weight: 700;
+        color: #fad503;
+        text-transform: capitalize;
+        margin: 15px 0 5px;
+    }
+    .contact .contact-info-item p{
+        font-size: 16px;
+        line-height: 25px;
+        color: #fad503;
+        text-transform: capitalize;
+        margin: 0;
+    }
+    @media (max-width: 600px){
+        .contact .contact-info-item{
+            float: left;
+            width: 50%;
+        }
+    }
+    .headline h1{
+        display: inline;
+    }
+    .headline span{
+        float: right;
+    }
+
+    .service {
+        float: left;
+        width: 100%;
+        padding: 50px;
+        border: 3px solid white ;
+      }
+    

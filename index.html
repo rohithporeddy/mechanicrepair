@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project repair</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+  <img style="float: right; width: 7%; border-radius: 50%;" src="images/logo.jpg">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Us</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+      <div class="content">
+        <img class="mySlides" src="images/bike1.jpg" style="width:100%">
+        <img class="mySlides" src="images/car1.jpg" style="width:100%">
+        <img class="mySlides" src="images/car2.jpg" style="width:100%">
+        <img class="mySlides" src="images/bike2.jpg" style="width:100%">
+      
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+
+      <div class="row">
+        <h1>Repair Advantages</h1>
+        <hr>
+        <div class="clm">
+          <img src="images/picdrop.png" alt="pickup" style="width:100%"/>
+          <figcaption>Free Pick-up & Drop</figcaption>
+        </div>
+        <div class="clm">
+          <img src="images/payment.png" alt="payment" style="width:100%"/>
+          <figcaption>Pay online, via card or cash on delivery</figcaption>
+        </div>
+        <div class="clm">
+          <img src="images/sanitize.jpg" alt="sanitize" style="width:100%"/>
+          <figcaption>Sanitised Facilities</figcaption>
+        </div>
+        <div class="clm">
+          <img src="images/spareparts.jpg" alt="spareparts" style="width:100%"/>
+          <figcaption>Genuine spare parts for replacement</figcaption>
+        </div>
+        <div class="clm">
+          <img src="images/sameday.jfif" alt="sameday" style="width:100%"/>
+          <figcaption>Same day delivery guarantee</figcaption>
+        </div>
+        <div class="clm">
+          <img src="images/workmanship.jfif" alt="workmanship" style="width:100%"/>
+          <figcaption>Quality workmanship</figcaption><br>
+        </div>
+      </div>
+
+      <div class="service1">
+        <div class="service">
+        <h1>Services</h1>
+        <hr>
+        <h3>Repairs :-</h3>
+        <p>Whether you’re confronting issues in your grip, suspension or brakes we can the fix the issue at hand and get it settled by our equipped and experienced experts. Our repairing services include:<br>
+           1. 3D Wheel Alignment and Balancing<br>
+           2.New Tires and Nitrogen Filling<br>
+           3. Engine Diagnostics<br>
+           4. Complete Electrical and A/C Works<br>
+           5. Intensive Interior Treatment<br>
+           6. Central Locking and Accessories<br>
+           7. Premium Ceramic Treatment<br>
+           8. Wind Shielded Glass Replacement</p>
+           <hr>
+           <h3>Regular Maintenance</h3>
+           <p>It is a manufacturing suggested Annual Maintenance which incorporates Oil and Filter changes to keep your machine up and running.</p>
+           <hr>
+           <h3>Denting And Painting</h3>
+           <p>We comprehend those scars/scratches look bad on your vehicle. Get body repairs and painting service to give your car altogether a new look.</p>
+           <hr>
+           <h3>Car Spare Parts Dealers</h3>
+           <p>We can provide you with spare parts for your vehicle at a reasonable and affordable price.</p>
+          </div>
+          <h1 style="color: thistle;">#Satisfaction is a rating. Loyalty is a brand.#</h1>
+    </div>
+      
+    </section>
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+
+           
+            </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project repair</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <img style="float: right; width: 7%; border-radius: 50%;" src="images/logo.jpg">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Us</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="images/about-us.jpg" style="width:100%">
+        <div>
+            <hr>
+            <h1>FAQ's</h1>
+            <hr>
+               <button class="accordion">Time for Delivery</button>
+               <div class="panel">
+               <p style="color: black;">The Repair Service package takes a minimum of 4 hours for complete inspection, road-worthiness check, washing, billing and processing. Repairs and replacement if any can delay the time taken for delivery</p>
+               </div>
+    
+               <button class="accordion">Repair & Replacement</button>
+               <div class="panel">
+               <p style="color: black;">Our service partners will submit an inspection report of your car. If any component is deemed defective / faulty, it will be brought to your notice and our partners will advice you on the best course of action.</p>
+               </div>
+    
+              <button class="accordion">Service vs check-up</button>
+              <div class="panel">
+              <p style="color: black;">Repair Car Service comprises of complete car health check-up followed by submission of an inspection report on the status of the vehicle. Post evaluation of the vehicle's condition, the service center will advise a course of action for the same. General service on the other hand comprises of oil filter replacement, oil change, suspension check-up, AC filter cleaning, fuel filter replacement. The cost incurred for the same would be significantly higher and would vary depending upon the make & model of the vehicle.</p>
+              </div>
+    
+              <button class="accordion">Reliability</button>
+              <div class="panel">
+              <p style="color: black;">Our service partners use only OEM spare parts (or equivalent grade). There will be no compromise in the quality of workmanship. In case of any queries, you can reach out to us at 6303406421. Alternatively, you can send an e-mail to repair@support.com.</p>
+              </div>
+    
+              <button class="accordion">Safety Measures</button>
+              <div class="panel">
+              <p style="color: black;">Avoid vehicle handover in crowded places while doing pick-up and drop. When people come together in crowds, you are more likely to come into close contact with someone that has COVID-19 and it is more difficult to maintain a physical distance of 1 metre (3 feet). Our garage partners will be equipped with gloves, face masks and hand sanitizer for their safety. We will conduct regular health check-ups for all our staff in accordance with the World Health Organization and Government regulations.All partners are advised to install and use the Aarogya Setu Covid-19 Live Tracker App for their own safety and the safety of our customers, which is our top priority.</p>
+              </div>
+    
+              <button class="accordion">Pricing includes</button>
+              <div class="panel">
+              <p style="color: black;">Pricing includes complete car health check-up along with submission of an inspection report outlining the health of your car's internals, complete exterior foam wash and interior vacuuming.Free pick-up & drop.All prices mentioned on the website are exclusive of taxes.</p>
+              </div>
+    
+            </div>
+
+            <div>
+                <hr>
+                <h1>Why Us..?</h1>
+                <hr>
+                <p>Repair offers our clients with elite services from our team of experts who are experienced and best in the field of auto repair industry. We are driven by the vision to combine the best-in- class innovations with outstanding service guidelines to suitably cater to the needs of our clients. It is our mission is to provide our customers with auto services that take care of all their vehicle needs.</p>
+                <h3 style="color: rgb(20, 238, 238);">Technical Expertise :</h3>
+                <p>Our work will exhibit industry leading levels of specialized technical expertise.
+                </p>
+                <h3 style="color: rgb(20, 238, 238);">Quality : </h3>
+                <p>Our service quality is extraordinary and never average as we always strive to fulfill our client’s needs and serve them satisfactorily.
+                </p>
+                <h3 style="color: rgb(20, 238, 238);">Dependable :</h3>
+                <p> Our service is very dependable as we strive to be a reliable service preference for our customers.
+                </p>
+                <h3 style="color: rgb(20, 238, 238);">Affordable :</h3>
+                <p>Our services are reasonable and affordable. We never overcharge our customers with any extra charge or bills.</p>
+            </div>
+    </section>
+    <script>
+         var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+    </script>
+</body>
+</html>
